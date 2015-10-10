@@ -1,0 +1,7 @@
+{
+	"namespace": "example.avro",	
+	"name": "pedigree", 
+	"type": "record", "fields": [
+		{"name": "dqPoints", "type": "int", "default": 0}
+	]
+}

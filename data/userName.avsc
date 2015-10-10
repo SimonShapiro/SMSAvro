@@ -1,0 +1,22 @@
+{ "namespace": "example.avro",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     {"name": "id", "type": "int"},
+     {"name": "first_name", "type": "string"},
+     {"name": "last_name", "type": "string"},
+     {"name": "email", "type": "string"},
+     {"name": "country", "type": "string"},
+     {"name": "ip_address", "type": "string"},
+     {"name": "resident", "type": "boolean"},
+     {"name": "dnaProfile", "type": {
+				"name": "pedigree", 
+				"type": "record", "fields": [
+				{"name": "underlyingFile", "type": "string"},
+				{"name": "lastModified", "type": "string"},
+				{"name": "dqPoints", "type": "int", "default": 0}
+	]
+}
+}
+ ]
+}

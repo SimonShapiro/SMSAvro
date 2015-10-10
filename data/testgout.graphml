@@ -1,0 +1,129 @@
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns 
+           http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://graphml.graphdrawing.org/xmlns">  
+  <key id="d0" for="node" yfiles.type="nodegraphics"/>  
+  <key id="d1" for="edge" yfiles.type="edgegraphics"/>  
+  <graph id="G" edgedefault="directed">
+    <node id="zz">
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Fill color="#AAAAAA" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>component</y:NodeLabel>  
+          <y:Shape type="roundrectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    <graph id="zz1">
+    <node id="a">  
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Geometry x="170.5" y="-15.0" width="59.0" height="30.0"/>  
+          <y:Fill color="#CCCCFF" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>a</y:NodeLabel>  
+          <y:Shape type="rectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    </node>
+    <node id="c">  
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Geometry x="170.5" y="-15.0" width="59.0" height="30.0"/>  
+          <y:Fill color="#CCCCFF" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>c</y:NodeLabel>  
+          <y:Shape type="rectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    </node>
+    </graph>
+    </node>
+  <node id="b">  
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Geometry x="170.5" y="-15.0" width="59.0" height="30.0"/>  
+          <y:Fill color="#CCCCFF" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>b</y:NodeLabel>  
+          <y:Shape type="rectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    </node><node id="d">  
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Geometry x="170.5" y="-15.0" width="59.0" height="30.0"/>  
+          <y:Fill color="#CCCCFF" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>d</y:NodeLabel>  
+          <y:Shape type="rectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    </node><node id="g">  
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Geometry x="170.5" y="-15.0" width="59.0" height="30.0"/>  
+          <y:Fill color="#CCCCFF" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>g</y:NodeLabel>  
+          <y:Shape type="rectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    </node>
+    <node id="f">  
+      <data key="d0">  
+        <y:ShapeNode selected="true">  
+          <y:Geometry x="170.5" y="-15.0" width="59.0" height="30.0"/>  
+          <y:Fill color="#CCCCFF" transparent="false"/>  
+          <y:BorderStyle type="line" width="1.0" color="#000000"/>  
+          <y:NodeLabel>f</y:NodeLabel>  
+          <y:Shape type="rectangle"/>  
+        </y:ShapeNode>  
+      </data>  
+    </node>
+  <edge id="2" source="c" target="b">  
+      <data key="d1">  
+        <y:PolyLineEdge>  
+          <y:LineStyle type="line" width="1.0" color="#CCCCFF"/>  
+          <y:Arrows source="none" target="standard"/>  
+          <y:EdgeLabel>two</y:EdgeLabel>  
+          <y:BendStyle smoothed="false"/>  
+        </y:PolyLineEdge>  
+      </data>  
+    </edge><edge id="5" source="d" target="g">  
+      <data key="d1">  
+        <y:PolyLineEdge>  
+          <y:LineStyle type="line" width="1.0" color="#000000"/>  
+          <y:Arrows source="none" target="standard"/>  
+          <y:EdgeLabel>five</y:EdgeLabel>  
+          <y:BendStyle smoothed="false"/>  
+        </y:PolyLineEdge>  
+      </data>  
+    </edge><edge id="1" source="a" target="b">  
+      <data key="d1">  
+        <y:PolyLineEdge>  
+          <y:LineStyle type="line" width="1.0" color="#000000"/>  
+          <y:Arrows source="none" target="standard"/>  
+          <y:EdgeLabel>one</y:EdgeLabel>  
+          <y:BendStyle smoothed="false"/>  
+        </y:PolyLineEdge>  
+      </data>  
+    </edge><edge id="4" source="d" target="f">  
+      <data key="d1">  
+        <y:PolyLineEdge>  
+          <y:LineStyle type="line" width="1.0" color="#000000"/>  
+          <y:Arrows source="none" target="standard"/>  
+          <y:EdgeLabel>four</y:EdgeLabel>  
+          <y:BendStyle smoothed="false"/>  
+        </y:PolyLineEdge>  
+      </data>  
+    </edge><edge id="3" source="a" target="d">  
+      <data key="d1">  
+        <y:PolyLineEdge>  
+          <y:LineStyle type="line" width="1.0" color="#000000"/>  
+          <y:Arrows source="none" target="standard"/>  
+          <y:EdgeLabel>three</y:EdgeLabel>  
+          <y:BendStyle smoothed="false"/>  
+        </y:PolyLineEdge>  
+      </data>  
+    </edge>
+</graph>
+</graphml>
