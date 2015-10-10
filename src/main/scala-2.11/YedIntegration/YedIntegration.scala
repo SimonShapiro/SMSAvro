@@ -4,13 +4,14 @@ package YedIntegration
  * @author simonshapiro
  */
 
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.HashMap
 
 case class Graph(allLines:ListBuffer[String]) {
 
-  val nodeList = new HashMap[String,Node]
-  val edgeList = new HashMap[String,Edge]
+  val nodeList = new mutable.HashMap[String,Node]
+  val edgeList = new mutable.HashMap[String,Edge]
   for (line <- allLines) {
     val cols = line.split(",").map(_.trim)
     // do whatever you want with the columns here
