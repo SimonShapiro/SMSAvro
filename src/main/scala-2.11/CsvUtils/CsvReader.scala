@@ -1,4 +1,4 @@
-package CsvReader
+package CsvUtils
 
 /**
  * @author simonshapiro
@@ -45,12 +45,12 @@ case class CsvReader(fName:String,firstLineContainsLabels:Boolean,delimiter:Char
     val inFile = new File(fName)
     val lastModified = new java.util.Date(inFile.lastModified)
     println(">>>>",fName,lastModified,inFile.getCanonicalFile)
-    // establish dnaProfile
+    /* establish dnaProfile
     val dnaProfile = new GenericData.Record(schema.getField("dnaProfile").schema)  // dnaProfile is special case as it doesn't come from .csv 
     dnaProfile.put("dqPoints", 0)
     dnaProfile.put("underlyingFile", fName)
     dnaProfile.put("lastModified", lastModified.toString)
-    
+    */
     val file = new File(avroFname)
     val datumWriter = new GenericDatumWriter[GenericData.Record](schema)
     val dataFileWriter = new DataFileWriter(datumWriter)
@@ -73,7 +73,7 @@ case class CsvReader(fName:String,firstLineContainsLabels:Boolean,delimiter:Char
 //        println("out",cols.length,labels(i),cols(i))
       }
 //      println(schema.getField("dnaProfile").schema)
-      user1.put("dnaProfile", dnaProfile)
+//      user1.put("dnaProfile", dnaProfile)  //dnaprofile surpressed
       dataFileWriter.append(user1)
       })
     dataFileWriter.close()

@@ -5,11 +5,12 @@
  */
 import java.io.File
 
-import CsvReader.CsvReader
+import CsvUtils.{AvroWriter, CsvReader}
 import org.apache.avro.Schema
 import org.apache.avro.file.DataFileReader
 import org.apache.avro.generic.{GenericData, GenericDatumReader}
 
+import scala.collection.mutable
 import scala.collection.mutable.HashMap
 
 //    val (status,labels,allLines) = CsvReader(args(0),true,",").csv2Buffer
@@ -19,7 +20,7 @@ import scala.collection.mutable.HashMap
 
 object csv2avro {
 
-  def processArgs(args:Array[String]):HashMap[String,String] = {
+  def processArgs(args:Array[String]):mutable.HashMap[String,String] = {
     val argHash = new HashMap[String,String]
     argHash.put("input","data/input.csv")
     argHash.put("output","data/output.avro")
@@ -35,14 +36,20 @@ object csv2avro {
   def main(args:Array[String]){
     val argHash = processArgs(args)
     val (status,msg,avroFname) = new CsvReader(argHash("input"),true,',').toAvro(argHash("schema"),argHash("output"))
-  
+    val wr = new AvroWriter(argHash("output"),argHash("schema")).flattenIntoBuffer(",")
+    println(wr.mkString("\n"))
     // Deserialize users from disk
-    val file = new File(argHash("output"))
+
+
+//  Only when read schema differs
     val schemaParser = new Schema.Parser()
     val schema = schemaParser.parse(new File(argHash("schema")))
     println(schema)
+
+
+    val file = new File(argHash("output"))
     val datumReader = new GenericDatumReader[GenericData.Record](schema)
-    println(datumReader.getSchema)
+    println("provided schema",datumReader.getSchema)
     val dataFileReader = new DataFileReader[GenericData.Record](file, datumReader)
     var user:GenericData.Record = null
     while (dataFileReader.hasNext) {
