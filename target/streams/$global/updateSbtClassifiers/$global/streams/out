@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 1451ms :: artifacts dl 46ms
+[debug] :: resolution report :: resolve 1399ms :: artifacts dl 55ms
 [debug] 	report for default#test2$sbt_2.11;1.0 default produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2$sbt_2.11-default.xml
-[debug] 	resolve done (1451ms resolve - 46ms download)
+[debug] 	resolve done (1399ms resolve - 55ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#test2$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 460ms :: artifacts dl 46ms
+[debug] :: resolution report :: resolve 374ms :: artifacts dl 55ms
 [debug] 	report for default#test2$sources_2.11;1.0 default produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2$sources_2.11-default.xml
-[debug] 	resolve done (460ms resolve - 46ms download)
+[debug] 	resolve done (374ms resolve - 55ms download)

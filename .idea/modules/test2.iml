@@ -23,14 +23,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.thoughtworks.paranamer:paranamer:2.3:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.avro:avro:1.7.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.commons:commons-compress:1.4.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-core-asl:1.9.13:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.6.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.tukaani:xz:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.thoughtworks.paranamer:paranamer:2.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.6.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.xerial.snappy:snappy-java:1.0.5:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-xml:2.11.0-M4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.4:jar" level="project" />
   </component>
 </module>

@@ -7,13 +7,28 @@
 [debug] == resolving dependencies for default#test2_2.11;1.0 [compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@af1e762
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66b6983c
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4
+[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [info] Resolving org.apache.avro#avro;1.7.7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.avro#avro;1.7.7 {compile=[default(compile)]}
@@ -94,28 +109,6 @@
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
-[info] Resolving org.scala-lang#scala-xml;2.11.0-M4 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-xml;2.11.0-M4 {compile=[default(compile)]}
-[info] Resolving org.scala-lang#scala-xml;2.11.0-M4 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-xml;2.11.0-M4 {compile=[default(compile)]}
-[debug] 		tried /Users/simonshapiro/.ivy2/local/org.scala-lang/scala-xml/2.11.0-M4/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.scala-lang#scala-xml;2.11.0-M4
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.pom
-[debug] 	public: found md file for org.scala-lang#scala-xml;2.11.0-M4
-[debug] 		=> https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.pom (2.11.0-M4)
-[debug] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang#scala-xml;2.11.0-M4!scala-xml.pom(pom.original) (184ms)
-[debug] 		tried /Users/simonshapiro/.ivy2/local/org.scala-lang/scala-xml/2.11.0-M4/jars/scala-xml.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar
-[debug] 	found org.scala-lang#scala-xml;2.11.0-M4 in public
-[debug] 	[2.11.0-M4] org.scala-lang#scala-xml;2.11.0-M4
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->runtime]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->compile]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#test2_2.11;1.0 [runtime]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [compile]
@@ -123,6 +116,17 @@
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->compile]
@@ -159,10 +163,6 @@
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->runtime]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->compile]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#test2_2.11;1.0 [test]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [runtime]
@@ -171,6 +171,17 @@
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->compile]
@@ -207,10 +218,6 @@
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->runtime]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->compile]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#test2_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'optional'
@@ -222,6 +229,17 @@
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->compile]
@@ -258,10 +276,6 @@
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->runtime]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->compile]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'runtime-internal'
@@ -272,6 +286,17 @@
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->compile]
@@ -308,10 +333,6 @@
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->runtime]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->compile]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [optional]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#test2_2.11;1.0 [test-internal]
@@ -322,6 +343,17 @@
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->default(compile)]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->default(compile)]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->runtime]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->compile]
@@ -358,10 +390,6 @@
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.avro#avro;1.7.7->org.slf4j#slf4j-api;1.6.4 [runtime->compile]
 [debug] == resolving dependencies default#test2_2.11;1.0->org.apache.avro#avro;1.7.7 [compile->master]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->default(compile)]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->runtime]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->compile]
-[debug] == resolving dependencies default#test2_2.11;1.0->org.scala-lang#scala-xml;2.11.0-M4 [compile->master]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#test2_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'plugin'
@@ -387,8 +415,6 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->runtime]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->master]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->optional(default)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [compile->compile(*)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
@@ -404,10 +430,6 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile(*)]
-[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4
-[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
@@ -457,13 +479,8 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] org.apache.avro#avro;1.7.7!avro.jar(bundle)
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-xml;2.11.0-M4!scala-xml.jar (459ms)
 [debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar
 [debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar
 [debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.3!paranamer.jar
@@ -473,10 +490,9 @@
 [debug] 	[NOT REQUIRED] org.tukaani#xz;1.0!xz.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
-[debug] :: resolution report :: resolve 2188ms :: artifacts dl 484ms
+[debug] :: resolution report :: resolve 942ms :: artifacts dl 53ms
 [debug] 	report for default#test2_2.11;1.0 compile produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2_2.11-compile.xml
 [debug] 	report for default#test2_2.11;1.0 runtime produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2_2.11-runtime.xml
 [debug] 	report for default#test2_2.11;1.0 test produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2_2.11-test.xml
@@ -490,5 +506,5 @@
 [debug] 	report for default#test2_2.11;1.0 docs produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2_2.11-docs.xml
 [debug] 	report for default#test2_2.11;1.0 pom produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2_2.11-pom.xml
 [debug] 	report for default#test2_2.11;1.0 scala-tool produced in /Users/simonshapiro/IdeaProjects/test2/target/resolution-cache/reports/default-test2_2.11-scala-tool.xml
-[debug] 	resolve done (2188ms resolve - 484ms download)
+[debug] 	resolve done (942ms resolve - 53ms download)
 [info] Done updating.
