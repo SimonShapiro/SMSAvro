@@ -59,15 +59,16 @@ case class CsvReader(fName:String,firstLineContainsLabels:Boolean,delimiter:Char
     val labels = labelLine.split(delimiter).map(_.trim)
     println(labels.length)
     allLines.foreach(line=>{
+      println(line)
       val user1 = new GenericData.Record(schema)  //strangely this schema only checks for valid fields NOT types.
-      val cols = line.split(",").map(_.trim)
+      val cols = line.split(delimiter).map(_.trim)
       for(i <- cols.indices) {  // interpret schema primitives here
-//        println(cols.length,labels(i),cols(i))
+        println(cols.length,labels(i),cols(i))
         if (schema.getField(labels(i)) == null) throw new IllegalArgumentException("csv labels do not match schema file in position "+i+": expecting "+schema.getFields)
         schema.getField(labels(i)).schema.getType match {  //what happens if labels(i) is NOT in schema
           case Schema.Type.INT     => user1.put(labels(i),cols(i).toInt)
           case Schema.Type.BOOLEAN => user1.put(labels(i),cols(i).toBoolean)
-          case Schema.Type.STRING  => user1.put(labels(i),cols(i))
+          case Schema.Type.STRING  => user1.put(labels(i),cols(i).toString)
           case _ => println("SCHEMA CONVERSION ERROR - csv can only contain prmitives")
         }
 //        println("out",cols.length,labels(i),cols(i))

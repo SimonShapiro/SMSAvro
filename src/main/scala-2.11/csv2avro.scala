@@ -36,8 +36,8 @@ object csv2avro {
   def main(args:Array[String]){
     val argHash = processArgs(args)
     val (status,msg,avroFname) = new CsvReader(argHash("input"),true,',').toAvro(argHash("schema"),argHash("output"))
-    val wr = new AvroWriter(argHash("output"),argHash("schema")).flattenIntoBuffer(",")
-    println(wr.mkString("\n"))
+    val wr = new AvroWriter(argHash("output"),"data/small.avsc").writeCsvAfterExpanding("id","tosplit",'|',"data/xx.csv",",")
+//    println(wr.mkString("\n"))
     // Deserialize users from disk
 
 

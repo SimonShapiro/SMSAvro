@@ -1,0 +1,9 @@
+{
+"name": "big",
+"namespace": "example.avro",
+"type": "record",
+"fields": [
+    {"name": "id", "type": "string"},
+    {"name": "tosplit", "type": ["null", "string"]}
+]
+}
