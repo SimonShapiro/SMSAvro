@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a06a21a1-65e4-465c-bbb8-28b765c26050" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/big.avsc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/small.avsc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/AvroWriter.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/AvroWriter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader$$anonfun$toAvro$1$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader$$anonfun$toAvro$1$$anonfun$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader$$anonfun$toAvro$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader$$anonfun$toAvro$1$$anonfun$apply$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader$$anonfun$toAvro$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader$$anonfun$toAvro$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/CsvUtils/CsvReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/csv2avro$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/csv2avro$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/user.avro" afterPath="$PROJECT_DIR$/data/user.avro" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/CsvUtils/AvroWriter.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/CsvUtils/AvroWriter.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/CsvUtils/CsvReader.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/CsvUtils/CsvReader.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test2.iws" />
@@ -672,7 +665,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444912888368</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Somewhat useful version with 1:m expansions">
+      <created>1444986386903</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1444986386903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -720,7 +719,8 @@
     <MESSAGE value="Incorporating source files" />
     <MESSAGE value="Features:&#10;- avro to listbuffer&#10;- csv to avro" />
     <MESSAGE value="Bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
+    <MESSAGE value="Somewhat useful version with 1:m expansions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Somewhat useful version with 1:m expansions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
