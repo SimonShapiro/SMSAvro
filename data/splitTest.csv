@@ -1,11 +1,11 @@
 id,tosplit,data
 a,AA|BB|CC,one
 b,BB,two
-c,-1,three
+c,,three
 d,CC|DD|EE,four
 e,AA,five
 f,UU,six
 g,VV,seven
 h,WW| AA,eight
-i,-1,nine
+i,,nine
 j,KK,ten

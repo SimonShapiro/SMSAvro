@@ -4,6 +4,7 @@
  * @author simonshapiro
  */
 import java.io.File
+import scala.xml.XML
 
 import CsvUtils.{AvroWriter, CsvReader}
 import org.apache.avro.Schema
@@ -19,28 +20,27 @@ import scala.collection.mutable.HashMap
 
 
 object csv2avro {
-
-  def processArgs(args:Array[String]):mutable.HashMap[String,String] = {
-    val argHash = new HashMap[String,String]
-    argHash.put("input","data/input.csv")
-    argHash.put("output","data/output.avro")
-    argHash.put("schema","data/csv.schema")
-    args.foreach(l=>{
-      val ll = l.split("=")  // .map(_.trim) is unnecessary because args will misuse white space around '='
-      argHash.put(ll(0),ll(1))
-    })
-    println(argHash)
-    argHash
-  }
-
   def main(args:Array[String]){
-    val argHash = processArgs(args)
-    val (status,msg,avroFname) = new CsvReader(argHash("input"),true,',').toAvro(argHash("schema"),argHash("output"))
-    val wr = new AvroWriter(argHash("output"),"data/small.avsc").writeCsvAfterExpanding("id","tosplit",'|',"data/xx.csv",",")
-//    println(wr.mkString("\n"))
+    println("Received {args.length}", args.length)
+    val config = XML.loadFile(args(0))
+
+    val (status,msg,avroFname) = new CsvReader((config \ "inputCSV").text
+        ,{((config \ "firstRowHasLabels").text match {
+            case "true" => true
+            case _ => false
+    })}
+        ,(config \ "primarySeparator").text(0))
+      .toAvro((config \ "schemaCSV").text,(config \ "outputAVRO").text)
+
+    val wr = new AvroWriter((config \ "outputAVRO").text,(config \ "selectionSchema").text)
+      .writeCsvAfterExpanding((config \ "idField").text,
+        (config \ "expansionField").text,
+        (config \ "secondarySeparator").text(0),
+        (config \ "expandedCSV").text,
+        (config \ "primarySeparator").text)
+
     // Deserialize users from disk
-
-
+/*
 //  Only when read schema differs
     val schemaParser = new Schema.Parser()
     val schema = schemaParser.parse(new File(argHash("schema")))
@@ -53,13 +53,10 @@ object csv2avro {
     val dataFileReader = new DataFileReader[GenericData.Record](file, datumReader)
     var user:GenericData.Record = null
     while (dataFileReader.hasNext) {
-      // Reuse user object by passing it to next(). This saves us from
-      // allocating and garbage collecting many objects for files with
-      // many items.
         user = dataFileReader.next(user)
-//      println(user);
-//      println(user.get("first_name"))
     }
     println(dataFileReader.getSchema)
+*/
+    println("hello")
   }
 }

@@ -1,0 +1,13 @@
+<config>
+    <inputCSV>data/splitTest.csv</inputCSV>
+    <outputAVRO>out.avro</outputAVRO>
+    <firstRowHasLabels>true</firstRowHasLabels>
+    <primarySeparator>,</primarySeparator>
+    <inputAVRO>out.avro</inputAVRO>
+    <schemaCSV>data/big.avsc</schemaCSV>
+    <selectionSchema>data/small.avsc</selectionSchema>
+    <secondarySeparator>|</secondarySeparator>
+    <expandedCSV>data/yy.csv</expandedCSV>
+    <idField>id</idField>
+    <expansionField>tosplit</expansionField>
+</config>
