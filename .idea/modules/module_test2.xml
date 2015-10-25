@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_test2" default="compile.module.test2">
+  <dirname property="module.test2.basedir" file="${ant.file.module_test2}"/>
+  
+  <property name="module.jdk.home.test2" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.test2" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.test2" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.test2" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="test2.output.dir" value="${module.test2.basedir}/../../target/scala-2.11/classes"/>
+  <property name="test2.testoutput.dir" value="${module.test2.basedir}/../../target/scala-2.11/test-classes"/>
+  
+  <path id="test2.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="test2.module.production.classpath">
+    <path refid="${module.jdk.classpath.test2}"/>
+    <path refid="library.sbt:_org.scala-lang:scala-library:2.11.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.avro:avro:1.7.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.commons:commons-compress:1.4.1:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-core-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.tukaani:xz:1.0:jar.classpath"/>
+    <path refid="library.sbt:_com.thoughtworks.paranamer:paranamer:2.3:jar.classpath"/>
+    <path refid="library.sbt:_org.slf4j:slf4j-api:1.6.4:jar.classpath"/>
+    <path refid="library.sbt:_org.xerial.snappy:snappy-java:1.0.5:jar.classpath"/>
+    <path refid="library.sbt:_org.scala-lang.modules:scala-xml_2.11:1.0.4:jar.classpath"/>
+  </path>
+  
+  <path id="test2.runtime.production.module.classpath">
+    <pathelement location="${test2.output.dir}"/>
+    <path refid="library.sbt:_org.scala-lang:scala-library:2.11.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.avro:avro:1.7.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.commons:commons-compress:1.4.1:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-core-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.tukaani:xz:1.0:jar.classpath"/>
+    <path refid="library.sbt:_com.thoughtworks.paranamer:paranamer:2.3:jar.classpath"/>
+    <path refid="library.sbt:_org.slf4j:slf4j-api:1.6.4:jar.classpath"/>
+    <path refid="library.sbt:_org.xerial.snappy:snappy-java:1.0.5:jar.classpath"/>
+    <path refid="library.sbt:_org.scala-lang.modules:scala-xml_2.11:1.0.4:jar.classpath"/>
+  </path>
+  
+  <path id="test2.module.classpath">
+    <path refid="${module.jdk.classpath.test2}"/>
+    <pathelement location="${test2.output.dir}"/>
+    <path refid="library.sbt:_org.scala-lang:scala-library:2.11.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.avro:avro:1.7.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.commons:commons-compress:1.4.1:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-core-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.tukaani:xz:1.0:jar.classpath"/>
+    <path refid="library.sbt:_com.thoughtworks.paranamer:paranamer:2.3:jar.classpath"/>
+    <path refid="library.sbt:_org.slf4j:slf4j-api:1.6.4:jar.classpath"/>
+    <path refid="library.sbt:_org.xerial.snappy:snappy-java:1.0.5:jar.classpath"/>
+    <path refid="library.sbt:_org.scala-lang.modules:scala-xml_2.11:1.0.4:jar.classpath"/>
+  </path>
+  
+  <path id="test2.runtime.module.classpath">
+    <pathelement location="${test2.testoutput.dir}"/>
+    <pathelement location="${test2.output.dir}"/>
+    <path refid="library.sbt:_org.scala-lang:scala-library:2.11.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.avro:avro:1.7.7:jar.classpath"/>
+    <path refid="library.sbt:_org.apache.commons:commons-compress:1.4.1:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-core-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar.classpath"/>
+    <path refid="library.sbt:_org.tukaani:xz:1.0:jar.classpath"/>
+    <path refid="library.sbt:_com.thoughtworks.paranamer:paranamer:2.3:jar.classpath"/>
+    <path refid="library.sbt:_org.slf4j:slf4j-api:1.6.4:jar.classpath"/>
+    <path refid="library.sbt:_org.xerial.snappy:snappy-java:1.0.5:jar.classpath"/>
+    <path refid="library.sbt:_org.scala-lang.modules:scala-xml_2.11:1.0.4:jar.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.test2">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.test2">
+    <patternset refid="excluded.from.module.test2"/>
+  </patternset>
+  
+  <path id="test2.module.sourcepath">
+    <dirset dir="${module.test2.basedir}/../../../test2">
+      <include name="src/main/java"/>
+      <include name="src/main/scala"/>
+      <include name="src/main/scala-2.11"/>
+      <include name="target/scala-2.11/src_managed/main"/>
+      <include name="src/main/resources"/>
+      <include name="target/scala-2.11/resource_managed/main"/>
+    </dirset>
+  </path>
+  
+  <path id="test2.module.test.sourcepath">
+    <dirset dir="${module.test2.basedir}/../../../test2">
+      <include name="src/test/java"/>
+      <include name="src/test/scala"/>
+      <include name="src/test/scala-2.11"/>
+      <include name="target/scala-2.11/src_managed/test"/>
+      <include name="src/test/resources"/>
+      <include name="target/scala-2.11/resource_managed/test"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.test2" depends="compile.module.test2.production,compile.module.test2.tests" description="Compile module test2"/>
+  
+  <target name="compile.module.test2.production" depends="register.custom.compilers" description="Compile module test2; production classes">
+    <mkdir dir="${test2.output.dir}"/>
+    <javac2 destdir="${test2.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.test2}/javac">
+      <compilerarg line="${compiler.args.test2}"/>
+      <bootclasspath refid="test2.module.bootclasspath"/>
+      <classpath refid="test2.module.production.classpath"/>
+      <src refid="test2.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.test2"/>
+    </javac2>
+    
+    <copy todir="${test2.output.dir}">
+      <fileset dir="${module.test2.basedir}/../../src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../src/main/scala">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../src/main/scala-2.11">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../target/scala-2.11/src_managed/main">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../target/scala-2.11/resource_managed/main">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.test2.tests" depends="register.custom.compilers,compile.module.test2.production" description="compile module test2; test classes" unless="skip.tests">
+    <mkdir dir="${test2.testoutput.dir}"/>
+    <javac2 destdir="${test2.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.test2}/javac">
+      <compilerarg line="${compiler.args.test2}"/>
+      <bootclasspath refid="test2.module.bootclasspath"/>
+      <classpath refid="test2.module.classpath"/>
+      <src refid="test2.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.test2"/>
+    </javac2>
+    
+    <copy todir="${test2.testoutput.dir}">
+      <fileset dir="${module.test2.basedir}/../../src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../src/test/scala">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../src/test/scala-2.11">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../target/scala-2.11/src_managed/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../src/test/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.test2.basedir}/../../target/scala-2.11/resource_managed/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.test2" description="cleanup module">
+    <delete dir="${test2.output.dir}"/>
+    <delete dir="${test2.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SMSavrotools:jar">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <root id="archive" name="test2.jar">
+      <element id="module-output" name="SMSavrotools" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.tukaani/xz/jars/xz-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.0.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.apache.avro/avro/bundles/avro-1.7.7.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="test2" default="all">
+  
+  
+  <property file="deployment/test2.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.tox/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.ear"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.swc"/>
+    <include name="*.ane"/>
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.6" value="${jdk.home.1.6}/bin"/>
+  <path id="jdk.classpath.1.6">
+    <fileset dir="${jdk.home.1.6}">
+      <include name="lib/deploy.jar"/>
+      <include name="lib/dt.jar"/>
+      <include name="lib/javaws.jar"/>
+      <include name="lib/jce.jar"/>
+      <include name="lib/jconsole.jar"/>
+      <include name="lib/management-agent.jar"/>
+      <include name="lib/plugin.jar"/>
+      <include name="lib/sa-jdi.jar"/>
+      <include name="../Classes/charsets.jar"/>
+      <include name="../Classes/classes.jar"/>
+      <include name="../Classes/jsse.jar"/>
+      <include name="../Classes/ui.jar"/>
+      <include name="lib/ext/apple_provider.jar"/>
+      <include name="lib/ext/dnsns.jar"/>
+      <include name="lib/ext/localedata.jar"/>
+      <include name="lib/ext/sunjce_provider.jar"/>
+      <include name="lib/ext/sunpkcs11.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.6}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.6}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.6"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.sbt:_com.thoughtworks.paranamer:paranamer:2.3:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.3.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.apache.avro:avro:1.7.7:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.apache.avro/avro/bundles/avro-1.7.7.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.apache.commons:commons-compress:1.4.1:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.codehaus.jackson:jackson-core-asl:1.9.13:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.codehaus.jackson:jackson-mapper-asl:1.9.13:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.scala-lang.modules:scala-xml_2.11:1.0.4:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.4.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.scala-lang:scala-library:2.11.7:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.slf4j:slf4j-api:1.6.4:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.tukaani:xz:1.0:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.tukaani/xz/jars/xz-1.0.jar"/>
+  </path>
+  
+  <path id="library.sbt:_org.xerial.snappy:snappy-java:1.0.5:jar.classpath">
+    <pathelement location="${basedir}/../../.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.0.5.jar"/>
+  </path>
+  
+  
+  <!-- Global Libraries -->
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/.idea/modules/module_test2.xml"/>
+  
+  <import file="${basedir}/.idea/modules/module_test2-build.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.test2, clean.module.test2-build" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.test2, compile.module.test2-build" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

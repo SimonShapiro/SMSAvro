@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test2.iml" filepath="$PROJECT_DIR$/.idea/modules/test2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test2-build.iml" filepath="$PROJECT_DIR$/.idea/modules/test2-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smsavrotools.iml" filepath="$PROJECT_DIR$/.idea/modules/smsavrotools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smsavrotools-build.iml" filepath="$PROJECT_DIR$/.idea/modules/smsavrotools-build.iml" />
     </modules>
   </component>
 </project>
