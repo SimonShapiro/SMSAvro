@@ -67,6 +67,7 @@ case class CsvReader(fName:String,firstLineContainsLabels:Boolean,delimiter:Char
         if (schema.getField(labels(i)) == null) throw new IllegalArgumentException("csv labels do not match schema file in position "+i+": expecting "+schema.getFields)
         schema.getField(labels(i)).schema.getType match {  //what happens if labels(i) is NOT in schema
           case Schema.Type.INT     => user1.put(labels(i),cols(i).toInt)
+          case Schema.Type.LONG     => user1.put(labels(i),cols(i).toLong)
           case Schema.Type.FLOAT     => user1.put(labels(i),cols(i).toFloat)
           case Schema.Type.BOOLEAN => user1.put(labels(i),cols(i).toBoolean)
           case Schema.Type.STRING  => user1.put(labels(i),cols(i).toString)
