@@ -1,4 +1,4 @@
-name := "SMSavrotools"
+name := "SMSavro"
 
 version := "1.0"
 

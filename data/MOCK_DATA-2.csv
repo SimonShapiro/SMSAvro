@@ -1,4 +1,4 @@
-id,first_name,last_name,email,country,ip_address,resident
+id,first_name,last_name,email,country,ip_address,resident?
 1,Nicole,Harper,nharper0@unicef.org,Indonesia,21.8.1.83,false
 2,Karen,Riley,kriley1@ucoz.com,China,172.60.168.111,true
 3,Clarence,Stone,cstone2@gizmodo.com,Indonesia,232.47.175.33,false
