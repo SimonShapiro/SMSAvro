@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 1521ms :: artifacts dl 37ms
+[debug] :: resolution report :: resolve 1510ms :: artifacts dl 70ms
 [debug] 	report for default#smsavro$sbt_2.11;1.0 default produced in /Users/simonshapiro/IdeaProjects/smsavro/target/resolution-cache/reports/default-smsavro$sbt_2.11-default.xml
-[debug] 	resolve done (1521ms resolve - 37ms download)
+[debug] 	resolve done (1510ms resolve - 70ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#smsavro$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 188ms :: artifacts dl 70ms
+[debug] :: resolution report :: resolve 519ms :: artifacts dl 104ms
 [debug] 	report for default#smsavro$sources_2.11;1.0 default produced in /Users/simonshapiro/IdeaProjects/smsavro/target/resolution-cache/reports/default-smsavro$sources_2.11-default.xml
-[debug] 	resolve done (188ms resolve - 70ms download)
+[debug] 	resolve done (519ms resolve - 104ms download)
