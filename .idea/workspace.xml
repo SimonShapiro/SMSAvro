@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a06a21a1-65e4-465c-bbb8-28b765c26050" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsavro.jar" afterPath="$PROJECT_DIR$/smsavro.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/extractDraftSchema.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/extractDraftSchema.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test2.iws" />
@@ -62,6 +62,16 @@
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="csv2avro.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -198,7 +208,6 @@
         <option value="$PROJECT_DIR$/data/splitTest.csv" />
         <option value="$PROJECT_DIR$/data/config.xml" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/CommandLineVersions/csv2avro.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala" />
         <option value="$PROJECT_DIR$/data/MOCK_DATA-2.csv" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/CsvUtils/CsvReader.scala" />
         <option value="$PROJECT_DIR$/data/MOCK_DATA.csv" />
@@ -211,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/main/scala-2.11/batchSchemaExtract.scala" />
         <option value="$PROJECT_DIR$/data/pipeTests/MOCK_DATA.txt" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/extractDraftSchema.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala" />
       </list>
     </option>
   </component>
@@ -1024,7 +1034,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446113015405</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Bug fix:  Removed buffered read for batchSchemaExtract">
+      <created>1446114343213</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1446114343213</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1082,7 +1098,8 @@
     <MESSAGE value="New feature:&#10;extractDraftSchema" />
     <MESSAGE value="New feature: bulk extract of schemas based on directory and extention" />
     <MESSAGE value="Bug fix:  Pipe delimers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix:  Pipe delimers" />
+    <MESSAGE value="Bug fix:  Removed buffered read for batchSchemaExtract" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix:  Removed buffered read for batchSchemaExtract" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1284,14 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1465,6 +1474,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/csv2avro.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>
