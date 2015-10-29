@@ -9,7 +9,7 @@ import scala.collection.mutable.ListBuffer
 object extractDraftSchema {
   def extract(fName: String, separator: String, namespace: String, draftFile: String): Unit = {
     val (status, labels, allLines) = CsvUtils.CsvReader(fName, true, separator(0)).toBuffer
-    val listOfLabels = labels.split(separator).map(_.trim)
+    val listOfLabels = labels.split(separator(0)).map(_.trim)
     val schemaStrings = new ListBuffer[String]
     schemaStrings += "{ \"namespace\": \"%s\",".format(namespace)
     schemaStrings += "  \"name\":  \"%s\",".format(fName.split("/").last)
