@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a06a21a1-65e4-465c-bbb8-28b765c26050" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/csv2avro$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/csv2avro$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/extractDraftSchema.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/extractDraftSchema.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsavro.jar" afterPath="$PROJECT_DIR$/smsavro.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test2.iws" />
@@ -1046,7 +1046,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446118330210</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Bug fix:  cvs2avro command line arguement">
+      <created>1446120091871</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1446120091871</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
