@@ -1,6 +1,6 @@
 import java.io.{FileWriter, BufferedWriter, File}
 import scala.collection.mutable.ListBuffer
-
+import scala.io.Source
 /**
  * Created by simonshapiro on 27/10/15.
  */
@@ -8,7 +8,9 @@ import scala.collection.mutable.ListBuffer
 
 object extractDraftSchema {
   def extract(fName: String, separator: String, namespace: String, draftFile: String): Unit = {
-    val (status, labels, allLines) = CsvUtils.CsvReader(fName, true, separator(0)).toBuffer
+//    val (status, labels, allLines) = CsvUtils.CsvReader(fName, true, separator(0)).toBuffer
+//    val file = Source.fromFile(filename).getLines)new File(fName)
+    val labels = Source.fromFile(fName).getLines.next
     val listOfLabels = labels.split(separator(0)).map(_.trim)
     val schemaStrings = new ListBuffer[String]
     schemaStrings += "{ \"namespace\": \"%s\",".format(namespace)
