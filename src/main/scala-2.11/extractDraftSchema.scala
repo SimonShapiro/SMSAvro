@@ -14,7 +14,7 @@ object extractDraftSchema {
     val listOfLabels = labels.split(separator(0)).map(_.trim)
     val schemaStrings = new ListBuffer[String]
     schemaStrings += "{ \"namespace\": \"%s\",".format(namespace)
-    schemaStrings += "  \"name\":  \"%s\",".format(fName.split("/").last)
+    schemaStrings += "  \"name\":  \"%s\",".format(draftFile.split("/").last.replace(".avsc",""))
     schemaStrings += "  \"type\":  \"record\","
     schemaStrings += "  \"fields\": ["
     val numberOfCols = listOfLabels.length
